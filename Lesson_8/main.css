@@ -1,0 +1,11 @@
+.simpsons_{
+    display: flex;
+    flex-wrap: wrap;
+}
+.simpsons__card{
+    width: 33%;
+}
+
+.off{
+    display: none;
+}

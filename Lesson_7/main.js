@@ -186,6 +186,7 @@ function UserCard(number) {
         this.transactionLimit = 100
         this.historyLog = []
         this.key = number
+
         this.getCardOptions = function () {
             return {
                 balance:this.balance,
@@ -229,3 +230,4 @@ card.transferCredits(card_1,100)
 
 console.log(card_1.getCardOptions());
 console.log(card.getCardOptions());
+console.log(card)
