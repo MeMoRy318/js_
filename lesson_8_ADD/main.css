@@ -1,0 +1,7 @@
+.users_{
+    display: flex;
+    flex-wrap: wrap;
+}
+.users__card{
+    width: 33.333%;
+}
