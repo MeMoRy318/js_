@@ -1,0 +1,39 @@
+.users{
+    margin: auto;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 1%;
+    height: 600px;
+    padding-top: 40px;
+}
+.user__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 49%;
+    background: #e0dede;
+    border: 1px solid black;
+    text-align: center;
+}
+.user__block:hover{
+    box-shadow: black 1px 1px 3px 1px;
+    transition: 300ms;
+
+}
+.user__title{
+    font-weight: bold;
+}
+.user__btn{
+    display: inline-block;
+    height: 30px;
+    width: 80%;
+    border-radius: 9px;
+    background: silver;
+    color: white;
+}
+.user__btn:hover{
+    background: blue;
+}

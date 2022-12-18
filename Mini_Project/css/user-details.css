@@ -1,0 +1,90 @@
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.user__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border: black 1px solid;
+    box-shadow: black 1px 1px 3px 1px;
+    background: #e0dede;
+    margin-top: 40px;
+    padding: 20px 0 20px 0;
+}
+.user__text{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.user__title{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0 20px 0;
+    font-style: italic;
+}
+.user__btn{
+    display: inline-block;
+    height: 35px;
+    width: 20%;
+    border-radius: 20px;
+    background: silver;
+    color: white;
+    text-transform: uppercase;
+}
+.user__btn:hover{
+    background: blue;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    border: black 1px solid;
+    box-shadow: black 1px 1px 3px 1px;
+    background: #e0dede;
+    margin-top: 2px;
+    padding: 20px 5px 20px 5px;
+    row-gap: 10px;
+}
+.posts__card{
+    width: 19%;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    row-gap: 10px;
+    padding: 20px 10px;
+
+}
+.posts__card:hover{
+    box-shadow: black 1px 1px 3px 1px;
+    transition: 400ms;
+}
+.post__btn{
+    display: inline-block;
+    height: 35px;
+    width: 90%;
+    border-radius: 20px;
+    background: silver;
+    color: white;
+    text-transform: uppercase;
+}
+.post__btn:hover{
+    background: blue;
+}
+.post__title{
+    font-weight: bold;
+    text-align: center;
+}
+.post__text:first-letter{
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+}
+.post__text{
+    text-align: center;
+    line-height: 20px;
+}
