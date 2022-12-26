@@ -5,6 +5,7 @@
 //     6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
 
 const id = new URL(location.href).searchParams.get('id');
+
 fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
     .then(value => value.json())
     .then(value => {
@@ -23,9 +24,9 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             for (const key in obj) {
 
                 if (typeof obj[key] === 'object') {
+
                     const user__title = document.createElement('h2');
                     user__title.classList.add('user__title');
-
                     user__title.innerText = key;
 
                     user__card.appendChild(user__title);
@@ -56,7 +57,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
                 .then(value1 => value1.json())
                 .then(value1 => {
-                    console.log(value1)
 
                     const posts = document.createElement('div');
                     posts.classList.add('posts');
@@ -87,8 +87,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
                 })
         }
-
-
 
 
     })

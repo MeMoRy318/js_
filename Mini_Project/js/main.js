@@ -6,7 +6,6 @@
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(value => value.json())
     .then(value => {
- console.log(value)
 
         const users = document.createElement('div');
         users.classList.add('users');
@@ -25,9 +24,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             const user__btn = document.createElement('button');
             user__btn.classList.add('user__btn');
             user__btn.innerText = 'Send'
-            user__btn.onclick = () =>{
-                location.href = `user-details.html?id=${item.id}`
-            }
+            user__btn.onclick = () =>location.href = `user-details.html?id=${item.id}`
 
             users.appendChild(user__block)
             user__block.append(user__title,user__btn)
@@ -36,4 +33,3 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
     })
 
-//

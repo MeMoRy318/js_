@@ -4,11 +4,11 @@
 //
 //
 const id = new URL(location.href).searchParams.get('id')
-console.log(id);
+
 fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
 .then(value => value.json())
 .then(value => {
-    console.log(value)
+
     const posts = document.createElement('div');
     posts.classList.add('posts');
     document.body.appendChild(posts);
